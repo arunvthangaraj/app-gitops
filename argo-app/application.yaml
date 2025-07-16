@@ -10,8 +10,8 @@ spec:
     targetRevision: main
     path: app-manifest
   destination:
-    server: '{{.values.server}}'
-    namespace: '{{.values.namespace}}'
+    server: https://kubernetes.default.svc
+    namespace: default
   syncPolicy:
     automated:
       prune: true
